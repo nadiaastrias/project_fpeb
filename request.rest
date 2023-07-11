@@ -1,0 +1,27 @@
+GET http://localhost:5000/dosen
+
+###
+GET http://localhost:5000/dosen/1
+
+###
+POST http://localhost:5000/dosen
+Content-Type: application/json
+
+{
+    "name":"John Doe",
+    "email":"john@gmail.com",
+    "gender":"Male"
+}
+
+###
+PATCH http://localhost:5000/dosen/1
+Content-Type: application/json
+
+{
+    "name":"John",
+    "email":"johndoe@gmail.com",
+    "gender":"Male"
+}
+
+###
+DELETE http://localhost:5000/dosen/2
